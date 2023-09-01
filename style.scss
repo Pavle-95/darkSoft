@@ -299,6 +299,9 @@ $font-family: 'Plus Jakarta Sans', sans-serif;
       justify-content: center;
     }
   }
+  @media (max-width: 500px) {
+    padding: 50px 20px;
+  }
 }
 
 .unique-style-holder {
@@ -372,10 +375,6 @@ $font-family: 'Plus Jakarta Sans', sans-serif;
         }
       }
     }
-    &:hover {
-      background-size: 110% 110%;
-      transition: .3s ease;
-    }
   }
   .free-templates {
     background-image: url(./img/free-templates.png);
@@ -383,12 +382,394 @@ $font-family: 'Plus Jakarta Sans', sans-serif;
   .unique-style {
     background-image: url(./img/unique-style.png);
   }
+  @media (min-width: 1025px) {
+    .free-templates, .unique-style {
+      &:hover {
+        background-size: 110% 110%;
+        transition: .3s ease;
+      }
+    }
+  }
   @media (max-width: 1024px) {
     flex-direction: column;
     .free-templates, .unique-style {
       width: 100%;
       background-size: cover;
+      &:hover {
+        background-size: cover !important;
+        transition: .3s ease;
+      }
     }
+  }
+  @media (max-width: 500px) {
+    padding: 50px 20px;
+  }
+
+  @media (max-width: 500px) {
+    padding: 50px 20px;
+  }
+}
+
+.products-carousel {
+  padding: 85px 20px 100px;
+  h2 {
+    // Our picks for you
+    color: black;
+    font-size: 48px;
+    font-family: $font-family;
+    font-weight: 700;
+    line-height: 60px;
+    word-wrap: break-word;
+    text-align: center;
+  }
+  p {
+    // Lorem ipsum det, cowec tetuec tetur duis necgi duis necgi det, consec eturlagix adipiscing eliet, cowec tetopak
+    color: black;
+    font-size: 18px;
+    font-family: $font-family;
+    font-weight: 400;
+    line-height: 32.40px;
+    word-wrap: break-word;
+    text-align: center;
+    max-width: 686px;
+    margin: 21px auto 55px;
+  }
+  .products-carousel-holder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    .slick-list {
+      overflow: hidden;
+      margin: 0px auto;
+      width: 95%;
+      .slick-track {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 20px;
+        .single-product {
+          width: 330px !important;
+          height: auto !important;
+          img {
+            display: block;
+            height: auto;
+            max-width: 100%;
+          }
+          h5 {
+            // Product Title
+            text-align: center;
+            color: black;
+            font-size: 18px;
+            font-family: $font-family;
+            font-weight: 600;
+            line-height: 25.20px;
+            word-wrap: break-word;
+            margin-top: 20px;
+          }
+          p {
+            margin: 5px 0px 10px;
+            color: black;
+            font-size: 16px;
+            font-family: $font-family;
+            font-weight: 400;
+            line-height: 28.80px;
+            word-wrap: break-word;
+          }
+          .color-options {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: fit-content;
+            gap: 6px;
+            margin: 0px auto;
+          }
+        }
+      }
+    }
+  }  
+  @media (max-width:1024px) {
+    padding: 85px 20px;
+  }
+  @media (max-width: 500px) {
+    padding: 50px 20px;
+  }
+}
+
+.lorem-section {
+  padding: 85px 20px 110px;
+  background-image: url('./img/section-bg-img.png');
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: relative;
+  .svg-element {
+    position: absolute;
+    z-index: 1;
+    left: 0px;
+    top: 20px;
+  }
+  .lorem-section-holder {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    .lorem-content {
+      flex: 0 0 45%;
+      h4 {
+        // Lorem ipsum dolor
+        color: white;
+        font-size: 24px;
+        font-family: $font-family;
+        font-weight: 400;
+        text-transform: uppercase;
+        word-wrap: break-word
+      }
+      h5 {
+        // Lorem ipsum
+        color: #78BEBA;
+        font-size: 18px;
+        font-family: $font-family;
+        font-weight: 500;
+        text-transform: uppercase;
+        word-wrap: break-word;
+        margin: 24px 0px 40px;
+      }
+      h3 {
+        // Lorem ipsum dolor sit
+        color: white;
+        font-size: 48px;
+        font-family: $font-family;
+        font-weight: 800;
+        text-transform: uppercase;
+        line-height: 56px;
+        word-wrap: break-word;
+        max-width: 444px;
+      }
+      p {
+        max-width: 489px;
+        // Lorem ipsum dolor sit amet consectetur. Non vitae nascetur turpis quam at aliquet. Egestas auctor amet donec in commodo ipsum dui ac mauris. Ac in.
+        color: white;
+        font-size: 16px;
+        font-family: $font-family;
+        font-weight: 400;
+        line-height: 32px;
+        word-wrap: break-word;
+        margin: 32px 0px 48px;
+      }
+      .btn-1 {
+        padding: 16px 32px;
+        border: none;
+        font-family: $font-family;
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 19px;
+        letter-spacing: 0em;
+        text-align: left;
+        border-radius: 12px;
+        border: 1px solid transparent;
+        transition: .3s ease;
+        background: #FCE98A;
+        color: #292647;
+        transition: .3s ease;
+        svg {
+          vertical-align: middle;
+          path {
+            stroke: #292647;
+          }
+        }
+        &:hover {
+          transition: .3s ease;
+          cursor: pointer;
+          border: 1px solid #FCE98A;
+          background: transparent;
+          color: #FCE98A;
+          svg {
+            transition: .3s ease;
+            path {
+              transition: .3s ease;
+              stroke: #FCE98A;
+            }
+          }
+        }
+      }
+    }
+    .lorem-img {
+      flex: 0 0 45%;
+      img {
+        display: block;
+        height: auto;
+        max-width: 100%;
+      }
+    }
+  }
+  @media (max-width: 1024px) {
+    padding: 85px 20px;
+    .lorem-section-holder {
+      .lorem-content {
+        h4, h5, h3, p {
+          // Lorem ipsum dolor
+          color: #292647;
+        }
+      }
+    }
+    .svg-element {
+      display: none
+    }
+  };
+  @media (max-width: 768px) {
+    .lorem-section-holder {
+      flex-direction: column;
+      .lorem-content {
+        h4, h5, h3, p {
+          // Lorem ipsum dolor
+          color: #292647;
+        }
+      }
+    }
+  };
+}
+
+.testimonial-carousel {
+  padding: 85px 20px 100px;
+  h2 {
+    // Our picks for you
+    color: black;
+    font-size: 48px;
+    font-family: $font-family;
+    font-weight: 700;
+    line-height: 60px;
+    word-wrap: break-word;
+    text-align: center;
+  }
+  p {
+    // Lorem ipsum det, cowec tetuec tetur duis necgi duis necgi det, consec eturlagix adipiscing eliet, cowec tetopak
+    color: black;
+    font-size: 18px;
+    font-family: $font-family;
+    font-weight: 400;
+    line-height: 32.40px;
+    word-wrap: break-word;
+    text-align: center;
+    max-width: 686px;
+    margin: 21px auto 55px;
+  }
+  .testimonial-carousel-holder {
+    .slick-list {
+      overflow: hidden;
+      margin: 0px auto;
+      width: 100%;
+      .slick-track {
+        display: flex;
+        justify-content: flex-start;
+        align-items: stretch;
+        gap: 30px;
+        .single-testimonial {
+          min-width: 450px !important;
+          max-height: 325px !important;
+          padding: 40px;
+          background-color: white;
+          box-shadow: 0px 0px 10px 0px #0000001F;
+          border-radius: 10px;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: flex-start;
+          gap: 25px;
+          .single-testimonial-header {
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            gap: 25px;
+            img {
+              border-radius: 50%;
+              max-width: 80px;
+              max-height: 80px;
+            }
+            h5 {
+              font-family: $font-family;
+              font-size: 18px;
+              font-weight: 400;
+              line-height: 25px;
+              letter-spacing: 0em;
+              text-align: left;
+              span {
+                font-size: 15px;
+                line-height: 21px;
+              }
+            }
+          }
+          p {
+            font-family: $font-family;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 36px;
+            letter-spacing: 0em;
+            text-align: left;
+          }
+        }
+      }
+    }
+    .slick-dots {
+      display: flex;
+      width: auto;
+      margin: 68px auto 0px;
+      justify-content: center;
+      list-style: none;
+      height: 20px;
+      /* Customize the active dot */
+      li {
+        margin: 0px 5px;
+        button {
+          font-size: 0px;
+          border: none;
+          background-color: transparent;
+          &::marker {
+            display: none;
+          }
+          &:before {
+            content: "";
+            display: inline-block;
+            width: 8px; /* Adjust the width to match your SVG size */
+            height: 8px; /* Adjust the height to match your SVG size */
+            background: url('./img/inactive-dot.svg') center center no-repeat;
+            background-size: contain;
+          }
+        }
+      }
+      .slick-active {
+        button {
+          &:before {
+            margin-top: 4px;
+            content: "";
+            display: inline-block;
+            width: 12px; /* Adjust the width to match your SVG size */
+            height: 12px; /* Adjust the height to match your SVG size */
+            background: url('./img/active-dot.svg') center center no-repeat;
+            background-size: contain;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    padding: 85px 20px;
+    .testimonial-carousel-holder {
+      .slick-list {
+        .slick-track {
+          .single-testimonial {
+            min-width: 260px !important;
+            max-height: fit-content !important;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 500px) {
+    padding: 50px 20px;
   }
 }
 
@@ -519,9 +900,15 @@ footer {
       justify-content: space-evenly;
       .company-info, .info-navigation {
         flex: 0 0 45%;
+        a {
+          margin: 20px auto 10px;
+        }
       }
       .links, .newslater {
         flex: 0 0 45%;
+        a {
+          margin: 20px auto 10px;
+        }
       }
       p, a, h5 {
         text-align: center !important;
@@ -536,6 +923,11 @@ footer {
       gap: 45px;
       .company-info, .info-navigation, .links, .newslater {
         flex: 0 0 100%;
+      }
+    }
+    .footer-info {
+      img {
+        max-width: 100%;
       }
     }
   }
